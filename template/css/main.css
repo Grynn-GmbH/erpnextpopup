@@ -1,0 +1,34 @@
+#erpnextpopup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 200px;
+    margin-left: -25%;
+    margin-top: -100px;
+    background-color: #e3e7e7;
+    border: 1px solid rgb(109, 107, 107);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#erpnext__popup {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine; 
+}

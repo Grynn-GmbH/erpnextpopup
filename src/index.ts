@@ -72,6 +72,13 @@ class ERPNextPopup {
     this.popup.style.display = 'none'
   }
 
+  /**
+   * Create Lead in ERPNext
+   * @param {string} email Email
+   * @param {string} name name of Lead
+   * @param {string} company Company of Lead
+   * @returns {Promise<Response>} A Promise of Return
+   */
   addContact = (
     email: string,
     name: string,

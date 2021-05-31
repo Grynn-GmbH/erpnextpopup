@@ -1,5 +1,12 @@
 /**
  * ERPNextPopup
+ * @since 0.0.1
+ * @author Grynn Gmbh
+ * @example
+ * ```
+ * import {ERPNextPopup} from 'erpnextpopup'
+ * const app = new ERPNextPopup('popup', 'apiKey', 'apiSecret')
+ * ```
  */
 class ERPNextPopup {
   popup: HTMLElement

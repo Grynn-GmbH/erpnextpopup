@@ -1,6 +1,19 @@
 {
   "name": "erpnextpopup",
   "version": "1.0.0",
+  "description": "A Simple Library to Integrate Static Site with ERPNext",
+  "keywords": [
+    "ERPNext",
+    "POS",
+    "static-site",
+    "contactus",
+    "lead"
+  ],
+  "homepage": "https://github.com/Grynn-GmbH/erpnextpopup",
+  "bugs": {
+    "url": "https://github.com/Grynn-GmbH/erpnextpopup",
+    "email": "sales@grynn.in"
+  },
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {

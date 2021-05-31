@@ -20,7 +20,7 @@
     "start": "parcel template/index.html --port 5000 --out-dir www",
     "build:website": "parcel build template/index.html --port 5000 --out-dir www",
     "build": "npm run clean && tsc",
-    "doc": "typedoc src --out docs",
+    "doc": "typedoc  --out docs src/*",
     "clean": "rimraf dist && rimraf www",
     "fix": "eslint --fix",
     "major": "yarn version --major",

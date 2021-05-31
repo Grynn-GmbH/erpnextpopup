@@ -7,6 +7,15 @@ class ERPNextPopup {
   apiSecret: string
   host: string
 
+  /**
+   * @since 0.0.1
+   * @author Grynn Gmbh
+   * @constructor
+   * @param {string} popupId popup id
+   * @param {string} apiKey api key
+   * @param {string} apiSecret api secret
+   * @param {URL} host host
+   */
   constructor(
     popupId: string,
     apiKey: string,

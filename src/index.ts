@@ -58,6 +58,16 @@ class ERPNextPopup {
     this.popup.style.display = 'block'
   }
 
+  /**
+   * Hide Popup
+   * @author Grynn Gmbh
+   * @since 0.0.1
+   * @example
+   * ```
+   * const app = new ERPNextPopup('popup', 'apiKey', 'apiSecret')
+   * app.hide()
+   * ```
+   */
   hide = () => {
     this.popup.style.display = 'none'
   }

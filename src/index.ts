@@ -44,6 +44,16 @@ class ERPNextPopup {
     window.document.removeEventListener('mouseout', this.show)
   }
 
+  /**
+   * Show Popup
+   * @author Grynn Gmbh
+   * @since 0.0.1
+   * @example
+   * ```
+   * const app = new ERPNextPopup('popup', 'apiKey', 'apiSecret')
+   * app.show()
+   * ```
+   */
   show = () => {
     this.popup.style.display = 'block'
   }

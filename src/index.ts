@@ -1,5 +1,3 @@
-import { apiKey, apiSecret, host, popupId } from './env'
-
 /**
  * ERPNextPopup
  */
@@ -35,23 +33,31 @@ class ERPNextPopup {
     this.popup.style.display = 'none'
   }
 
-  addContact = (email: string): Promise<Response> => {
+  addContact = (
+    email: string,
+    name: string,
+    company: string
+  ): Promise<Response> => {
     const data = {
-      email,
+      doctype: 'Lead',
+      status: 'Lead',
+      company: company,
+      lead_name: name,
+      email_id: email,
     }
 
     return fetch(this.host, {
       method: 'POST',
+      mode: 'cors',
       headers: {
-        mode: 'cros',
-        'Content-Type': 'application/json',
-        redirect: 'follow',
-        body: JSON.stringify(data),
+        Authorization: `token ${this.apiKey}:${this.apiSecret}`,
+        Accept: 'application/json',
       },
+      body: JSON.stringify(data),
     })
       .then((resp) => JSON.stringify(resp))
       .catch((err) => err)
   }
 }
 
-const p = new ERPNextPopup(popupId, apiKey, apiSecret, host)
+export { ERPNextPopup }

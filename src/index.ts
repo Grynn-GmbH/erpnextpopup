@@ -30,6 +30,16 @@ class ERPNextPopup {
     window.document.onmouseleave = this.show
   }
 
+  /**
+   * Unsubscribe From Event
+   * @author Grynn Gmbh
+   * @since 0.0.1
+   * @example
+   * ```
+   * const app = new ERPNextPopup('popup', 'apiKey', 'apiSecret')
+   * app.unsubscribe()
+   * ```
+   */
   unsubscribe = () => {
     window.document.removeEventListener('mouseout', this.show)
   }
